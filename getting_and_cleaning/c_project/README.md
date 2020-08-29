@@ -18,7 +18,9 @@ The following steps were used in order to process the Samsung data into the outp
 3. The extraction of the measurements only on the mean and standard deviation features is made with the help of Regular Expressions:
        
     a) Features names are read with read.table
+    
     b) The index of the columns containing the strings “mean()” and “std()” are found with the grep function
+    
     c) The original merged dataset is filtered with column indexing
            
 4. The files features_info.txt and features.txt inside the UCI HAR Dataset folder were analysed in order to understand the meaning of each one of the columns in the filtered dataset. This being said, those features were better desribed with the help of Regular Expression and the gsub command. (PS: Line 37 “BodyBody” only exists with the folder version given in the link course – the data in the dataset site has different and updated names)
